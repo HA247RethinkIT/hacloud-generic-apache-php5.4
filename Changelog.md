@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ##
 ## [Unreleased]
 ### Fix
+- Disable session.upload_progress by default to mitigate PHP2Shell (CVE-2026-109618 / CVE-2026-109619). Set PHP_session.upload_progress.enabled=1 to re-enable
 - Only read environment variables that start with PHP_ followed by a lowercase ini directive
 
 ##
